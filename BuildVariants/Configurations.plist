@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Debug</key>
+        <dict>
+            <key>googleAnalyticsCode</key>
+            <string>UA-12345</string>
+            <key>serverURL</key>
+            <string>mock.something.com</string>
+        </dict>
+        <key>Staging</key>
+        <dict>
+            <key>googleAnalyticsCode</key>
+            <string>UA-12345</string>
+            <key>serverURL</key>
+            <string>staging.something.com</string>
+        </dict>
+        <key>Release</key>
+        <dict>
+            <key>googleAnalyticsCode</key>
+            <string>UA-654123</string>
+            <key>serverURL</key>
+            <string>something.com</string>
+        </dict>
+    </dict>
+</plist>

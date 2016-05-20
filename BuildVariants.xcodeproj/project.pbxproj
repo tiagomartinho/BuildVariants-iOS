@@ -12,6 +12,8 @@
 		EA5FFE781CEF367E009A3005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FFE761CEF367E009A3005 /* Main.storyboard */; };
 		EA5FFE7A1CEF367E009A3005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5FFE791CEF367E009A3005 /* Assets.xcassets */; };
 		EA5FFE7D1CEF367E009A3005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FFE7B1CEF367E009A3005 /* LaunchScreen.storyboard */; };
+		EA5FFE871CEF36B3009A3005 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5FFE861CEF36B3009A3005 /* Configurations.plist */; };
+		EA5FFE891CEF3710009A3005 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FFE881CEF3710009A3005 /* Configurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EA5FFE791CEF367E009A3005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5FFE7C1CEF367E009A3005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA5FFE7E1CEF367E009A3005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5FFE861CEF36B3009A3005 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		EA5FFE881CEF3710009A3005 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		EA5FFE711CEF367E009A3005 /* BuildVariants */ = {
 			isa = PBXGroup;
 			children = (
-				EA5FFE721CEF367E009A3005 /* AppDelegate.swift */,
 				EA5FFE741CEF367E009A3005 /* ViewController.swift */,
+				EA5FFE861CEF36B3009A3005 /* Configurations.plist */,
+				EA5FFE881CEF3710009A3005 /* Configurations.swift */,
+				EA5FFE7E1CEF367E009A3005 /* Info.plist */,
+				EA5FFE8A1CEF37AD009A3005 /* Supporting Files */,
+			);
+			path = BuildVariants;
+			sourceTree = "<group>";
+		};
+		EA5FFE8A1CEF37AD009A3005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FFE721CEF367E009A3005 /* AppDelegate.swift */,
 				EA5FFE761CEF367E009A3005 /* Main.storyboard */,
 				EA5FFE791CEF367E009A3005 /* Assets.xcassets */,
 				EA5FFE7B1CEF367E009A3005 /* LaunchScreen.storyboard */,
-				EA5FFE7E1CEF367E009A3005 /* Info.plist */,
 			);
-			path = BuildVariants;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FFE7D1CEF367E009A3005 /* LaunchScreen.storyboard in Resources */,
+				EA5FFE871CEF36B3009A3005 /* Configurations.plist in Resources */,
 				EA5FFE7A1CEF367E009A3005 /* Assets.xcassets in Resources */,
 				EA5FFE781CEF367E009A3005 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			files = (
 				EA5FFE751CEF367E009A3005 /* ViewController.swift in Sources */,
 				EA5FFE731CEF367E009A3005 /* AppDelegate.swift in Sources */,
+				EA5FFE891CEF3710009A3005 /* Configurations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,63 @@
 			};
 			name = Release;
 		};
+		EA5FFE841CEF3691009A3005 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		EA5FFE851CEF3691009A3005 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuildVariants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.BuildVariants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +349,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA5FFE7F1CEF367E009A3005 /* Debug */,
+				EA5FFE841CEF3691009A3005 /* Staging */,
 				EA5FFE801CEF367E009A3005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -285,6 +359,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA5FFE821CEF367E009A3005 /* Debug */,
+				EA5FFE851CEF3691009A3005 /* Staging */,
 				EA5FFE831CEF367E009A3005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
